@@ -1,0 +1,534 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Page Title</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/themes/politic.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+</head>
+
+<body>
+
+<div data-role="page" id="inicio">
+	<div data-role="header">
+    	<h1><img src="imagenes/logo.png">Politic </h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>Selecciona</h1>
+        <a href="#bienvenida" class="ui-btn"><img src="imagenes/images.gif"><br>
+        Usuario nuevo</a>
+        <a href="#candidatos" class="ui-btn"><img src="imagenes/images.gif"><br>Ya soy usuario</a>
+    </div>
+</div>
+
+<!-- aca empieza la otra pagina -->
+<div data-role="page" id="bienvenida">
+	<div data-role="header">
+    	<a href="#inicio" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a><!--aca esta el boton de devolverse, sereferenciar a la agina anterior con las demas paginas-->
+        <h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>Bienvenida</h1>
+        <p>En esta aplicación podrás aclarar tus dudas acerca de tu afinidad politica</p>
+        <a href="#encuesta1" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Siguiente</a>
+        
+    </div>
+</div>
+
+<!-- aca empieza la otra pagina -->
+<div data-role="page" id="encuesta1">
+	<div data-role="header">
+    <a href="#bienvenida" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>¿Que importancia tiene la religión para usted?</h1>
+       <a href="#encuesta2" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-plus-circle"></i> Mucho</a>
+    <a href="#encuesta2" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-minus-circle"></i> Poco</a></div>
+</div>
+
+<!-- aca empieza la otra pagina -->
+<div data-role="page" id="encuesta2">
+	<div data-role="header">
+    <a href="#encuesta1" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>¿Esta usted dispuesto a cambiar algunas costumbres con las que ha sido educado?</h1>
+      <p>
+       <a href="#encuesta3" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-thumbs-up"></i>Si</a>
+      </p>
+      <p><a href="#encuesta3" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-thumbs-down"></i>No</a></p>
+	</div>
+</div>
+
+<!-- aca empieza la otra pagina -->
+<div data-role="page" id="encuesta3">
+	<div data-role="header">
+    <a href="#encuesta2" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+  <div role="main" class="ui-content">
+    	<h1>¿Para usted la organización politica del país está?</h1>
+    <a href="#encuesta4" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-child"></i>Bien</a>
+    
+    <a href="#encuesta4" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-meh-o"></i>Podria mejorar</a></div>
+</div>
+
+<!-- aca empieza la otra pagina -->
+<div data-role="page" id="encuesta4">
+	<div data-role="header">
+    <a href="#encuesta3" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>¿Cree usted que la revolución capitalista debería ...?</h1>
+    <a href="#encuesta5" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-sort-amount-asc"></i>Acabar</a>
+    <a href="#encuesta5" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-line-chart"></i>Seguir</a></div>
+</div>
+
+
+<div data-role="page" id="encuesta5">
+	<div data-role="header">
+    <a href="#encuesta4" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>¿Cree usted que se desperdicia el potencial económico de algunos sectores del país?</h1>
+   <a href="#encuesta6" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-area-chart"></i>Si</a>
+    <a href="#encuesta6" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-bar-chart"></i>No</a></div>
+</div>
+
+
+<div data-role="page" id="encuesta6">
+	<div data-role="header">
+    <a href="#encuesta5" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>¿Cree usted que se deben emplear las costumbres ejercidas en gobiernos anteriores?</h1>
+        <a href="#encuesta7" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-thumbs-up"></i>Si</a>
+    
+    <a href="#encuesta7" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-thumbs-down"></i>No</a></div>
+</div>
+
+
+<div data-role="page" id="encuesta7">
+	<div data-role="header">
+     <a href="#encuesta6" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>¿Cree usted que la iglesia debería seguir teniendo el poder politico que tiene actualmente?</h1>
+    <a href="#encuesta8" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-university"></i>Si</a>
+    <a href="#encuesta8" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-ban"></i>No</a></div>
+</div>
+
+
+<div data-role="page" id="encuesta8">
+	<div data-role="header">
+    <a href="#encuesta7" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>¿Cree usted que el gobierno debe dar más participación politica a indigenas?</h1>
+    <a href="#encuesta9" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-users"></i>Si</a>
+    <a href="#encuesta9" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-user"></i>No</a></div>
+</div>
+
+
+<div data-role="page" id="encuesta9">
+	<div data-role="header">
+    <a href="#encuesta8" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>¿Esta de acuerdo con la última reforma tributaria?</h1>
+    <a href="#encuesta10" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-thumbs-up"></i>Si</a>
+    <a href="#encuesta10" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-thumbs-down"></i>No</a></div>
+</div>
+
+
+<div data-role="page" id="encuesta10">
+	<div data-role="header">
+    <a href="#encuesta9" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>¿Cree usted que debe mejorar la educación superior del país?</h1>
+    <a href="#partidosafines" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-lightbulb-o"></i>Si</a>
+    <a href="#partidosafines" class="ui-btn ui-icon-btn-icon-left"><i class="fa fa-lock"></i>No</a></div>
+</div>
+
+
+<div data-role="page" id="partidosafines">
+	<div data-role="header">
+     <a href="#encuesta10" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>partidos afines</h1>
+        <a href="#candidatos" class="ui-btn"><img src="imagenes/liberal-logo.png"><br>
+        Partido Liberal</a>
+        <a href="#candidatos" class="ui-btn"><img src="imagenes/logo_polo.gif"><br>Polo Democrático</a>
+    </div>
+</div>
+
+
+<div data-role="page" id="candidatos">
+	<div data-role="header">
+    <a href="#partidos afines" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>Candidatos</h1>
+       <a href="#seleccion" class="ui-btn"><img src="imagenes/images.gif"><br>
+        Ver todos</a>
+        <a href="#partido1" class="ui-btn"><img src="imagenes/images.gif"><br>Ver por partido</a>
+     <a href="#inicio" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Inicio</a>
+    </div>
+    
+</div>
+
+
+<!--pagina de listado-->
+<div data-role="page" id="partido1">
+	<div data-role="header">
+    <a href="#candidatos" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>partido politico</h1>
+       <a href="#seleccion liberal" class="ui-btn"><img src="imagenes/liberal-logo.png"><br>
+        Partido Liberal</a>
+        <a href="#seleccion polo" class="ui-btn"><img src="imagenes/logo_polo.gif"><br>Polo Democratico</a>
+        <a href="#seleccion concervador" class="ui-btn"><img src="imagenes/images (1).jpg"><br>Partido Concervador</a>
+    </div>
+</div>
+
+
+<div data-role="page" id="seleccion">
+	<div data-role="header">
+    <a href="#candidatos" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>partido politico</h1>
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#informacion">
+        <img src="imagenes/horacio.gif""../_assets/img/album-bb.jpg">
+    <h2>Horacio Serpa</h2>
+    <p>Partido Liberal</p></a>
+    </li>
+    <li><a href="#informacion">
+        <img src="imagenes/ivan.gif""../_assets/img/album-hc.jpg">
+    <h2>Ivan Cepeda</h2>
+    <p>Polo Democrático</p></a>
+    </li>
+    <li><a href="#informacion">
+        <img src="imagenes/roberto.gif""../_assets/img/album-p.jpg">
+    <h2>Roberto Gerlein</h2>
+    <p>Partido Concervador</p></a>
+    </li>
+    <li><a href="#informacion">
+        <img src="imagenes/viviane.gif""../_assets/img/album-bb.jpg">
+    <h2>Viviane Morales</h2>
+    <p>Partido Liberal</p></a>
+    </li>
+    <li><a href="#informacion">
+        <img src="imagenes/jorge.gif""../_assets/img/album-bb.jpg">
+    <h2>Jorge Robledo</h2>
+    <p>Polo Democrático</p></a>
+    </li>
+    <li><a href="#informacion">
+        <img src="imagenes/eduardo.gif""../_assets/img/album-bb.jpg">
+    <h2>Eduardo Maya</h2>
+    <p>Partido Concervador</p></a>
+    </li>
+</ul>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="seleccion liberal">
+	<div data-role="header">
+     <a href="#partido1" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>partido politico</h1>
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#informacion1 maria">
+        <img src="imagenes/horacio.gif""../_assets/img/album-bb.jpg">
+    <h2>Horacio Serpa</h2>
+    <p>Partido Liberal</p></a>
+    </li>
+    
+    <li><a href="#informacion1 monica">
+        <img src="imagenes/viviane.gif""../_assets/img/album-bb.jpg">
+    <h2>Viviane Morales</h2>
+    <p>Partido Liberal</p></a>
+    </li>
+    
+</ul>
+    </div>
+</div>
+
+
+<div data-role="page" id="seleccion concervador">
+	<div data-role="header">
+    <a href="#partido1" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>partido politico</h1>
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#informacion1 luis">
+        <img src="imagenes/roberto.gif""../_assets/img/album-p.jpg">
+    <h2>Roberto Gerlein</h2>
+    <p>Partido Concervador</p></a>
+    </li>
+    <li><a href="#informacion1 pablo">
+        <img src="imagenes/eduardo.gif""../_assets/img/album-bb.jpg">
+    <h2>Eduardo Maya</h2>
+    <p>Partido Concervador</p></a>
+    </li>
+</ul> 
+    </div>
+</div>
+
+
+<div data-role="page" id="seleccion polo">
+	<div data-role="header">
+    <a href="#partido1" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>partido politico</h1>
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#informacion1 peñaloza">
+        <img src="imagenes/ivan.gif""../_assets/img/album-hc.jpg">
+    <h2>Ivan Cepeda</h2>
+    <p>Polo Democrático</p></a>
+    </li>
+    <li><a href="#informacion1 gomez">
+        <img src="imagenes/jorge.gif""../_assets/img/album-bb.jpg">
+    <h2>Jorge Robledo</h2>
+    <p>Polo Democrático</p></a>
+    </li>
+</ul> 
+    </div>
+</div>
+
+
+
+<div data-role="page" id="informacion">
+	<div data-role="header">
+    <a href="#seleccion" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>candidatos</h1>
+       <a href="#informacion1 pablo" class="ui-btn"><img src="imagenes/eduardo.gif"><br>
+        Eduardo Maya (Partido Conservador) </a>
+        <p>Carlos Eduardo Enríquez Maya es un senador conservador nacido en Iles, Nariño, el 11 de octubre de 1948. Su formación profesional comenzó con un título de Abogado de la Universidad de Nariño, el cual complementó con un posgrado en Derecho Internacional Público y Privado en la Fundación Getulio Vargas de Brasil. Es uno de los grandes caciques electorales de Nariño, donde ha conseguido casi todos los votos en als elecciones que ha ganado.
+        </p>
+         <a href="#informacion1 maria" class="ui-btn"><img
+         src="imagenes/horacio.gif"><br>
+        Horacio Serpa (Partido Liberal)</a>
+        <p>Por supuesto me empeñaré en ser diligente, activo, responsable, cumplido, correcto. Algunos de ustedes se estarán preguntando, ¿será que Serpa a estas alturas podrá hacer todo eso? Les cuento la siguiente anécdota. Cuando a Pablo Picasso le celebraron sus 90 años en París, un periodista le preguntó si a su edad todavía podía hacer algo útil. El más extraordinario artista de la época moderna le contesto: "Le cuento que todavía pinto y fornico". A mi que no me vayan a preguntar.
+        </p>
+         <a href="#informacion1 monica" class="ui-btn"><img src="imagenes/viviane.gif"><br>
+        Viviane Morales (Partido Liberal)</a>
+        <p>La palabra que caracterizó la Fiscalía de Viviane Morales no puede ser otra que valentía. Diversos medios de comunicación y sectores de la opinión pública han reconocido en la labor de la ex Fiscal todas las virtudes y logros que hicieron que el ente acusador resaltara entre los años 2011 a 2012 como un organismo independiente, autónomo y que buscó ante todo la materialización de la justicia como fin último del derecho penal y del Estado de Derecho.
+        </p>
+        <a href="#informacion1 peñaloza" class="ui-btn"><img src="imagenes/ivan.gif"><br>
+        Ivan Cepeda (Polo Democratico)</a>
+        <p>Iván Cepeda es uno de los represetantes más fuertes que tiene el Polo Democrático Alternativo en el Congreso. Su partido se ha constituido en la principal fuerza política de la izquierda en el país y de oposición a los gobiernos de turno. Cepeda, quien de nuevo se lanza como candidato al Senado, tiene una larga trayectoria política desde su temprana militancia en la JUCO (Juventud Comunista), pasando por diversos movimientos hasta llegar al Polo. Su carrera se ha centrado en la defensa de los derechos humanos, desde su vocería en el Movimiento de Víctimas de Crímenes de Estado (MOVICE).
+        </p>
+        <a href="#informacion1 gomez" class="ui-btn"><img src="imagenes/jorge.gif"><br>
+        Jorge Robledo (Polo Democratico)</a>
+        <p>Un país a la venta con vista al mar Hace muchos años que La Rel mantiene un fluido diálogo con Jorge Enrique Robledo, dirigente del Polo Democrático Alternativo, senador desde 2002 y el más votado en las últimas elecciones. Arquitecto y profesor por más de treinta años, habla de una manera suave y contundente, llana y didáctica, entrando en unos caminos donde política y docencia parecen ir de la mano. En Colombia anda todo tan entreverado que desde afuera el presidente Juan Manuel Santos.
+        </p>
+         <a href="#informacion1 luis" class="ui-btn"><img src="imagenes/roberto.gif"><br>
+        Roberto Gerlein (Partido Conservador)</a>
+         <p>Siempre ha sido una fuerza política de estabilidad, de orden, de progreso tranquilo. Hoy tiene algunas dificultades internas en relación con las políticas a seguir sobre su candidato a la Presidencia de la República.
+
+Unos consideramos que debe adelantarse en coalición con otras colectividades, otros piensan que debe haber un candidato propio del partido. Yo espero que esta situación pueda superarse y el partido de alguna manera llegue unificado a las elecciones presidenciales.
+        </p>
+    </div>
+</div>
+
+<div data-role="page" id="informacion1 luis">
+	<div data-role="header">
+    <a href="#informacion" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>candidatos</h1>
+       <a href="#inicio" class="ui-btn"><img src="imagenes/roberto.gif"><br>
+        Roberto Gerlein</a>
+        <p>Falta una mayor conectividad con la opinión pública. Pero, pienso que el Congreso que termina el 19 de julio de este año fue un excelente Congreso, aprobó leyes de gran importancia y me parece que en materia de códigos, los que se aprobaron en la Comisión Primera y luego en plenaria pueden ayudar a cambiar favorablemente los requerimientos de este país en la celeridad de la justicia y en el orden penitenciario.
+
+A mí me parece que el Congreso lo maltratan desde varios ángulos del país, todos los medios se ensañan con él. Pero este Congreso ha hecho cosas buenas y así lo ha dicho el Presidente de la República, que ha aprobado medidas importantes para conseguir o facilitar que se consiga la paz política en Colombia, para que se facilite una justicia pronta y cumplida. Para que en el campo económico el sector agrario reciba un inmenso impulso. 
+Si se mira detenidamente las leyes que se han aprobado este congreso ha sido el mejor.
+
+
+Usted ya va a cumplir 40 años en el Congreso, ¿cuáles cree que han sido los grandes logros en estos años?
+
+Reformas constitucionales, las leyes que se aprobaron hace tantos años, sobre la compañera permanente, sobre la igualdad de los hijos matrimoniales y extramatrimoniales, sobre la sustitución pensional y recientemente las leyes sobre restitución de tierras y reparación de víctimas. La elección popular de alcaldes y trabajadores.
+
+
+Y entonces, ¿cuáles son los tres grandes retos para el próximo?
+
+Hay unos campos en los que el Congreso de la República tiene la obligación de participar con su pronunciamiento, por ejemplo todo lo pertinente al posconflicto en la Habana, la reforma judicial y la reforma territorial, porque en este país todavía no hemos encontrado una organización jurídico – constitucional y legal que permita tener una verdadera descentralización administrativa.
+
+
+¿Cómo ve al país en un escenario de postconflicto?
+
+Hay que armarse de paciencia y buena voluntad. Porque el posconflicto va a ser la época en la cual los acuerdos de La Habana, si es que se llegan a dar, se van a institucionalizar, se van a convertir en reformas constitucionales y desde luego estas situaciones producen resquemores, antagonismo, opiniones divergentes.
+
+Hay que organizar un nuevo país, porque las reformas que se demanden para que las Farc entreguen las armas, no van a ser fáciles de asimilar por la totalidad de la población colombiana.
+        </p>
+    </div>
+</div>
+
+
+<div data-role="page" id="informacion1 gomez">
+	<div data-role="header">
+    <a href="#informacion" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>candidatos</h1>
+       <a href="#inicio" class="ui-btn"><img src="imagenes/jorge.gif"><br>
+        Jorge Robledo</a>
+        <p>El espectáculo de la Universidad San Martín, bien llamada el Saludcoop de la educación, y el hasta más grotesco de la Autónoma del Caribe, son la punta del iceberg del sistema de privatización de la universidad colombiana. En otro país, no tan sometido al tapen-tapen presidencial, habría un gran debate. No puede negarse la importancia decisiva que para las personas y los países tiene el desarrollo del conocimiento y, con este, del sistema educativo donde se crea, transmite y acumula. “La riqueza.
+        Procesos judiciales iniciados por el gobierno contra acumuladores de baldíos no avanzan. El gobierno no tiene voluntad para recuperar los baldíos ilegalmente acumulados. Esa fue la conclusión del senador Jorge Enrique Robledo tras escuchar las respuestas del Ministro de Agricultura, Aurelio Iragorri, en el debate para conocer el estado de los procesos judiciales instaurados por el gobierno en contra de quienes han acumulado baldíos de manera ilegal como la trasnacional del sector agrícola.
+        Tras los informes realizados por la Contraloría General de la Nación y las denuncias hechas por los senadores Jorge Enrique Robledo, Iván Cepeda y el ex representante a la Cámara Wilson Arias sobre la acumulación ilegal de baldíos en la altillanura, el día miércoles 19 de noviembre de 2014 se llevará a cabo un debate en el Congreso de la República con miras a establecer cuál ha sido el desarrollo de dichas denuncias. Al debate citado por el senador Robledo del Polo Democrático.
+        </p>
+    </div>
+</div>
+
+
+<div data-role="page" id="informacion1 peñaloza">
+	<div data-role="header">
+    <a href="#informacion" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>candidatos</h1>
+       <a href="#inicio" class="ui-btn"><img src="imagenes/ivan.gif"><br>
+        Ivan Cepeda</a>
+        <p>De una amplia diversidad social y política, además de diferentes sectores de opinión. Soy un candidato que no tiene una maquinaria, ni los miles de millones de pesos para hacer política de manera tradicional, además no me interesa hacer política de dicha forma. Hay una serie de sectores sociales con los cuales he trabajado toda mi vida como defensor de derechos humanos y como parlamentario, entonces apelaré al apoyo de las víctimas de la violencia, a los sectores campesinos, indígenas y afrodescendientes, a los sectores que viven en los extramuros de la ciudad, sectores en los cuales han reconocido mi labor brindándome su respaldo.
+
+Yo apeló también al apoyo de los estudiantes, a los académicos, a los intelectuales, a los sectores urbanos inconformes. Pienso que me van a respaldar aquellos que están inconformes con las reformas que se han implementado durante este gobierno en los temas salud, educación y justicia. Que en mi perspectiva, no son sino la reducción del espectro de los derechos fundamentales.
+
+Ahora lo que acabo de mencionar hace alusión a muchas personas que no están inscritas en un partido político o en una ideología. Pero también he encontrado que hay muchos que han votado por mí en todos los sectores políticos, porque entienden que la defensa de la paz y de los derechos humanos es una causa nacional y que debe merecer el respaldo a la gestión y al programa que defiendo.
+
+
+Su apuesta política siempre se ha relacionado con la defensa de los derechos humanos ¿qué proyectos en este tema piensa promover?
+
+Voy al próximo Senado a continuar y a profundizar la defensa de la paz, los derechos humanos y la democracia. Pero entorno a la posibilidad de que se produzca el final del conflicto armado en Colombia. Ese es para mí, sin lugar a dudas el propósito de mi estancia en el Senado. Creo que las reformas que se están haciendo en la Habana (Cuba) son sustanciales para el país. Debe haber un mínimo de reforma agraria, un mínimo de reforma política, un tratamiento distinto al tema del narcotráfico y el consumo de drogas ilícitas, unos derechos de las víctimas a la justicia, la verdad y la reparación, en un modelo compatible a la paz. Esa es la discusión esencial, así como aquellos acuerdos que tengan que ver con un proceso similar al que se adelanta con las Farc en relación con el Eln.
+        </p>
+    </div>
+</div>
+
+
+<div data-role="page" id="informacion1 pablo">
+	<div data-role="header">
+    <a href="#informacion" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>candidatos</h1>
+       <a href="#inicio" class="ui-btn"><img src="imagenes/eduardo.gif"><br>
+        Eduardo Maya</a>
+        <p>De ahí saltó a la política electoral. En su primer intento, en 1994, llegó a la Cámara de Representantes Nariño con la bandera del Partido Conservador, en una campaña en la que apoyó a Ernesto Samper y no a su copartidario Andrés Pastrana. Desde entonces, logró hacerse reelegir para dos períodos más en la Cámara. En 1997 el Consejo de Estado rechazó una demanda de pérdida de investidura en su contra presuntamente por exigirles cuotas a sus empleados, decisión que fue apoyada por la Procuraduría.
+
+En 1999 dio mucho de qué hablar por sus proyectos. Especialmente dos: una propuesta para reducir el número de diputados departamentales, y afirmar que las Asambleas debían desaparecer del todo por carecer de funciones importantes ; y un proyecto de ley para reducir el número de festivos al año a cinco.
+
+Durante el gobierno Pastrana fue defensor del presidente e incluso, por apoyar un proyecto que reducía las transferencias a las regiones, su casa en Pasto fue apedreada.
+
+En 2006 dio otro salto al pasar al Senado, impulsado por su cercanía política con Álvaro Uribe Vélez, inicialmente a través del Ministro del Interior Carlos Holguín y luego de forma directa. De hecho, fue uno de los conservadores que abogó por apoyar la segunda reelección de Uribe y no presentar candidato propio en 2010, además de que fue ponente a favor para el referendo para esa segunda reelección.
+
+Esa cercanía con Uribe también se reflejó en que fue uno de los beneficiados de la contratación del Fondo de Seguridad y Convivencia, Fonsecon, para construir palacios municipales, como explicó La Silla Vacía en agosto de 2009. Esta era una de las herramientas del gobierno de Uribe para endulzar el oído de congresistas, casi todos conservadores.
+
+Actualmente ocupa un escaño en el Senado y es el presidente de la Comisión Primera de Asuntos Constitucionales; en sus años de Representante también pertenecía a la Comisión Primera.
+
+En abril de 2008 la Corte Suprema de Justicia abrió una investigación en su contra por presuntos vínculos con paramilitares. Enríquez había sido señalado por un desmovilizado de las AUC de haber recibido el apoyo armado de las Autodefensas durante su campaña al Congreso en 1994. Sin embargo, en noviembre la Corte consideró que no tenía pruebas suficientes para iniciar un proceso en su contra.
+
+En abril de 2010 salió ileso de un atentado con explosivos que estallaron a su paso por una carretera de Nariño.
+
+En marzo de 2011 y por petición de la Fiscalía, la Corte Suprema de Justicia inició una investigación preliminar a 13 congresistas por estar posiblemente involucrados en el escándalo de la Dirección Nacional de Estupefacientes-DNE. De igual modo, la Procuraduría General de la Nación dio inicio a una investigación disciplinaria contra estos congresistas, entre los cuales se encuentra el senador Enríquez Maya.
+        </p>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="informacion1 maria">
+	<div data-role="header">
+    <a href="#informacion" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>candidatos</h1>
+       <a href="#inicio" class="ui-btn"><img src="imagenes/horacio.gif"><br>
+        Horacio Serpa</a>
+        <p>El Presidente acaba de plantear su reelección y ha invitado a los partidos integrantes de la Mesa de Unidad Nacional a que lo respalden. Los liberales vamos a pronunciarnos el domingo venidero y desde ya se vislumbra que lo acompañaremos en su lucha por la reelección.
+Agrada esa posibilidad. En Santos vemos a un gobernante serio, constructivo, preocupado por acertar. Haberse opuesto de frente a los designios de su malgeniado mentor, nos indica que es de los nuestros, es decir, de los que consideramos con firmeza que lo que importa es Colombia.
+El Director del Partido ha observado con satisfacción que Santos está gobernando con ideas y talante liberales. Su reelección será la antesala del regreso del liberalismo al poder en el 2018. Registro con satisfacción que ha estado bien encaminado el liderazgo del doctor Simón Gaviria.
+Como en el dicho, a Santos le tocó bailar con la más fea. No ha sido fácil reparar errores, establecer parámetros para lo social, prodigar esfuerzos para reconciliación, para incluir, para acabar los odios, las venganzas, la corrupción y toda esa herencia maldita que según el Presidente del Congreso Juan Fernando Cristo tuvo que recibir sin beneficio de inventario.
+Comparto, empero, la opinión de los que reclaman que no sea un simple contrato de adhesión, sino un compromiso por Colombia.
+----- En primer lugar, desde luego, la convivencia, incluyendo al Eln. Para ratificar los acuerdos cabe la Consulta Popular con una Constituyente de elección popular convocada para reunirse cinco años después.
+----- En salud, asumir la construcción de un nuevo Sistema Nacional, en el que prime la prevención, la promoción, una consagrada y eficaz atención a los enfermos, la estabilidad y justa retribución al personal de la salud, la eliminación de los indebidos aprovechamientos económicos y acabar con las especulaciones financieras. Tal como se ha venido tratando en la Sociedad Económica de amigos del País.
+----- La reforma a la educación, con énfasis en la superior, para mejorar su calidad, ampliar cobertura, abaratarla en lo público y vigilar los costos de la privada, buscando que la educación se vuelva el principal instrumento de lucha contra la desigualdad.
+----- La reforma a fondo de la Justicia no da espera. El señor Ministro de Justicia anunció un proyecto para Marzo, que debe liderar el liberalismo.
+----- Apoyar la inversión pública y privada, respaldar el crecimiento económico con resultados sociales, ser solidarios con la empresa y sus desarrollos, ofrecer seguridad jurídica, facilitar sus emprendimientos, propiciar el mejoramiento del talento humano, proporcionarles servicios, infraestructura y seguridad.
+----- Abaratar el costo de vida debe ser un compromiso. Gasolina, matrículas, medicamentos, servicios públicos, vivienda, transporte, todo aquí es más caro que en el resto de los países de igual nivel. El salario mínimo se queda corto para atender los mínimos vitales y sus reajustes anuales nunca corresponden a los requerimientos sociales.
+----- Si los resultados en empleo han sido saludables, hay que hacer esfuerzos para mejorarlos. En concordancia con el punto anterior el liberalismo debe retomar sus planteamientos sobre precios y salarios.
+----- Los servicios públicos deben ocupar lugar de prioridad en las preocupaciones del gobierno y en los compromisos del liberalismo. Calidad, continuidad, precio, acceso, con subsidios que beneficien a los estratos débiles económicamente. Hay que cuidar el agua como patrimonio esencial y proporcionarla sin costo a los pobres.
+----- La seguridad en las ciudades es un reto, para superar las bandas criminales, el pandillismo, el microtráfico, el matoneo, la violencia contra la mujer y la protección a la niñez. No es mucho pedir que se cumpla la Constitución Nacional en cuanto "los derechos de los niños están por encima de los derechos de todos los demás".
+----- En descentralización vamos para atrás, como el cangrejo. No se ha reconocido la autonomía de las Entidades Territoriales, como lo obliga la Constitución y ni pensar en que se puedan organizar regiones. La ley Orgánica de Ordenamiento Territorial solo dejó disgustos y frustraciones. Este punto esencial es una bandera liberal que ha venido agitando con coraje el exministro liberal Eduardo Verano de la Rosa.
+        </p>
+    </div>
+</div>
+
+
+<div data-role="page" id="informacion1 monica">
+	<div data-role="header">
+    <a href="#informacion" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-left">Anterior</a>
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    	<h1>candidatos</h1>
+       <a href="#inicio" class="ui-btn"><img src="imagenes/viviane.gif"><br>
+        Viviane Morales</a>
+        <p>Fue la ley 133 de 1994, iniciativa de la entonces Representante a la Cámara Viviane Morales, una de las primeras leyes estatutarias la que se encargó de definir el concepto de libertad religiosa, el ámbito al cual se aplica y los efectos institucionales y personales de ella. Se reconoció por primera vez en nuestra historia la existencia jurídica de otras iglesias diferentes a la católica y sus derechos para difundir su doctrina, formar sus ministros, administrar sus lugares de culto, establecer capellanías y celebrar matrimonios con efectos civiles. En lo personal se reconoce la amplia órbita del derecho fundamental de libertad religiosa como el derecho a creer, no creer o dejar de creer, a educar a los hijos con la formación religiosa acorde a sus principios, a recibir información y formación de carácter religioso de cualquier índole.
+        Nada fácil resultó la aprobación de la Ley de Cuotas impulsada por Viviane Morales quien luego de más de seis años de trabajo constante y firme contra los paradigmas de una sociedad conservadora, logró hacerla realidad en el año 2000. Los objetivos generales de la Ley, por medio de la cual se dispone que el 30 por ciento de los altos cargos públicos deben ser ejercidos por mujeres, quedaron detallados en la exposición de motivos que presentó Morales en su momento: el reconocimiento de los derechos de las mujeres; el cumplimiento de la obligación constitucional de igualdad real, particularmente en materia de participación en cargos decisorios por parte de las mujeres; y la apertura de espacios para innovar en las prácticas políticas para que se dé un desarrollo de las mujeres y de la sociedad en su conjunto.
+        </p>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="">
+	<div data-role="header">
+    	<h1><img src="imagenes/logo.png">Politic</h1>
+    </div>
+	<div role="main" class="ui-content">
+    
+    </div>
+</div>
+
+
+</body>
+</html>
